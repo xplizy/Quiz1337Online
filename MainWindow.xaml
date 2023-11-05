@@ -1,0 +1,33 @@
+﻿<Window x:Class="Labb3_NET22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3_NET22"
+        mc:Ignorable="d"
+        Title="QUIZ 1337" Height="800" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Column="1" Grid.Row="1" x:Name="Logo" Source="Images/Logo.png" Height="200" Width="600" Grid.ColumnSpan="1" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+        <Button x:Name="btnStartNewQuiz" Content="Start New Quiz" Grid.Column="1" Grid.Row="2" Width="310" FontSize="30" Height="120" Click="btnStartNewQuiz_Click" Background="#FF33D213" FontFamily="Showcard Gothic" Grid.RowSpan="5" Margin="225,68,225,336"/>
+        
+        <Button x:Name="btnCreateNewQuiz" Content="Create New Quiz" Grid.Column="1" Grid.Row="4" Width="310" FontSize="30" Height="120" Click="btnCreateNewQuiz_Click" Background="#FF0793FF" FontFamily="Showcard Gothic" Grid.RowSpan="3" RenderTransformOrigin="0.506,0.942" Margin="225,219,225,185"/>
+        <Button x:Name="btnExitGame" Content="Exit Game" Grid.Column="1" Grid.Row="6" Width="310" FontSize="30" Height="120" Click="btnExitGame_Click" Background="#FFEF150B" FontFamily="Showcard Gothic" Margin="225,370,225,34">
+        </Button>
+
+    </Grid>
+</Window>

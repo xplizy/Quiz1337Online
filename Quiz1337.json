@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "category": "Football",
+    "statement": "In 1999, Jason McAteer left Liverpool to join which club?",
+    "answers": [ "Bolton Wanderers", "Blackburn Rovers", "Tranmere Rovers" ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "category": "Football",
+    "statement": "Lionel Messi holds the record for most goals in a calendar year but how many did he score?",
+    "answers": [ "81", "91", "011" ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "category": "Football",
+    "statement": "Wayne Rooney scored a hat trick on his Manchester United debut against which club?",
+    "answers": [ "Fenerbahce", "Galatasaray", "Besiktas" ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "category": "Football",
+    "statement": "Tony Adams captained an English title winning side in how many decades?",
+    "answers": [ "1", "2", "3" ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "category": "Football",
+    "statement": "Thierry Henry made his professional debut with which club?",
+    "answers": [ "Monoco", "Juventus", "Arsenal" ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "category": "Football",
+    "statement": "Paul Van Himst is a celebrated footballer of which nationality?",
+    "answers": [ "France", "The Netherlands", "Belgium" ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "category": "Football",
+    "statement": "Which nation won the 1986 World Cup?",
+    "answers": [ "West Germany", "Brazil", "Argentina" ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "category": "Football",
+    "statement": "Which Argentinian football club who play their home games at La Bombonera are known by the nickname 'Azul y Oro'?",
+    "answers": [ "Boca Juniors", "Cruz Azul", "River Plate" ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "category": "Football",
+    "statement": "Which Spanish side was named FIFA's Club of the Century in 2000?",
+    "answers": [ "Barcelona", "Valencia", "Real Madrid" ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "category": "Football",
+    "statement": "Upon his retirement from international football in 2000, which English striker had scored 30 times in 63 appearances for his country?",
+    "answers": [ "Alan Shearer", "Micheal Owen", "Teddy Sheringham" ],
+    "correctAnswer": 0
+  }
+]

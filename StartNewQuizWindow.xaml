@@ -1,0 +1,73 @@
+﻿<Window x:Class="Labb3_NET22.StartNewQuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3_NET22"
+        mc:Ignorable="d"
+        Title="QUIZ 1337" Height="800" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Column="1" Grid.ColumnSpan="5" Source="Images\Logo.png" HorizontalAlignment="Left" Height="200"  Width="600" Grid.Row="15" Margin="113,21,0,523"/>
+        <TextBlock Grid.Column="3" Grid.Row="15" Text="QUIZ!" FontSize="22" FontFamily="Showcard Gothic" Margin="251,296,313,404" RenderTransformOrigin="0.441,0.546" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="cbbQuizChoose"  Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2" Height="40" SelectionChanged="cbbQuizChoose_SelectionChanged" Grid.RowSpan="13" Margin="202,356,50,348">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="CATEGORY!" FontSize="22" Grid.RowSpan="12" FontFamily="Showcard Gothic" Margin="134,297,223,403" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="cbbChooseCateghory" Grid.Row="15" Grid.ColumnSpan="3" Height="40" Grid.Column="1" Margin="74,356,150,348">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Category}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <Button x:Name="btnStartQuiz" Grid.Row="15" Width="270" Height="80" FontSize="24" Content="START QUIZ" Click="btnStartQuiz_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" Grid.Column="1" FontFamily="Showcard Gothic" Background="#FF16F70F" Margin="80,452,153,212">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.342"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.924"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnMainMenu" Grid.Column="3" Grid.Row="15" Width="270" Height="80" FontSize="24" Content="MAIN MENU" Click="btnMainMenu_Click" Grid.ColumnSpan="2" Background="#FFEFE825" FontFamily="Showcard Gothic" Margin="202,449,51,215"/>
+    </Grid>
+</Window>
